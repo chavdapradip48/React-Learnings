@@ -1,0 +1,80 @@
+html,body {
+    background-color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+h2 {
+    text-align: center;
+    padding-top: 33px;
+}
+
+.main-container {
+    background-color: rgb(52, 52, 50);
+    height: auto;
+    width: 50%;
+    margin-top: 6%;
+    margin-left: 25%;
+    border-radius: 10px;
+}
+
+.password-container {
+    margin-left: 8%;
+    padding: 4% 0;
+}
+
+.password-settings {
+    margin-left: 8%;
+    padding-bottom: 5%;
+}
+
+.password-settings span {
+    margin-right: 6%;
+}
+
+.password-settings label {
+    font-weight: 600;
+    color: rgb(219, 124, 0);
+    font-size: 15px;
+    margin-left: 5px;
+}
+
+#number-allowed, #char-allowed {
+    width: 15px; 
+    height: 15px; 
+}
+
+#password {
+    width: 60%;
+    height: 40px;
+    /* border-radius: 10px 0 0 10px; */
+    font-weight: 600;
+    color: rgb(219, 124, 0);
+    font-size: 15px;
+}
+
+#copy {
+    margin: 0;
+    width: 15%;
+    height: 44px;
+    border: 0px;
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    border-radius: 0 10px 10px 0;
+}
+
+#copy:hover {
+    border: 3px solid rgb(219, 124, 0);
+}
+
+#generate {
+    margin: 0;
+    width: 15%;
+    height: 44px;
+    border: 0px;
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px 0 0 10px;
+}
