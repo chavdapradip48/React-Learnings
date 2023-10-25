@@ -1,10 +1,10 @@
 import "./App.css";
 import {useState} from "react"
-
+import 'bootstrap/dist/css/bootstrap.css';
 
 export default function App() {
   return (
-      <Board />
+      <Board/>
   );
 }
 
@@ -43,7 +43,7 @@ function Board(){
   }
 
   return (
-    <div className="board">
+    <div className="board d-flex flex-column justify-content-center align-items-center">
       {squares.map((row, index) => {
           return <SquareRow row={row} rowIndex={index} handler={handleSquareClick} />;
       })}   
@@ -53,7 +53,7 @@ function Board(){
 
 function SquareRow({row, rowIndex, handler}) {
   return (
-    <div className="square-row ">
+    <div className="parent d-flex">
       {row.map((col, colIndex) => {
           return <Square boxValue={col} row={rowIndex} col={colIndex} handler={handler} />;
       })}
@@ -62,12 +62,9 @@ function SquareRow({row, rowIndex, handler}) {
 }
 
 function Square({boxValue, row, col, handler}) {
-  
-  return (<>
-    <div className="square" onClick={() => {handler(row,col)}}>
-      <div className="square-data">{boxValue}</div>
-    </div>
-  </>);
+  return (
+    <div className="child d-flex justify-content-center align-items-center" onClick={() => {handler(row,col)}}>{boxValue}</div>
+  );
 }
 
 function calculateWinner(squares) {

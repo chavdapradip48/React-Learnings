@@ -1,15 +1,45 @@
 * {
+  color: white;
+  background-color: black;
+  font-size: 120%;
+}
+
+.board{
+  height: 100vh;
+}
+
+.child {
+  height: 110px;
+  width: 110px;
+  border: 2px solid white;
+}
+@media (max-width: 576px) {
+  * {
+    font-size: 110%;
+  }
+  .child {
+    height: 70px;
+    width: 70px;
+  }
+}
+
+@media (max-width: 768px) and (min-width: 576px) {
+
+} 
+
+
+/* * {
   font-size: 115%;
   background-color: black;
   color: white;
 }
 
 .board {
-  /* display: flex;
+   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; */
-  /* height: 100vh; */
+  align-items: center; 
+   height: 100vh; 
 }
 
 .square {
@@ -21,10 +51,10 @@
 
 .square-data {
   border-style: none;
-  /* position: relative;
+   position: relative;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);  */
+  transform: translate(-50%, -50%); 
 }
 
 
@@ -56,4 +86,4 @@
     border: 1px solid white;
     display: inline-block;
   }  
-}
+} */
