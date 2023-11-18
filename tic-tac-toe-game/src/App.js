@@ -1,5 +1,5 @@
 import "./App.css";
-import {useState} from "react"
+import React,{useState} from "react"
 import 'bootstrap/dist/css/bootstrap.css';
 
 export default function App() {
@@ -15,7 +15,7 @@ function Board(){
   const [won, setWon] = useState("");
   const [squares, setSquares] = useState(() => 
       Array.from({ length: boardSize }, () => Array(boardSize).fill(defaultValue)));
-
+  // [["0","",""],["","",""],["","",""]]
   function handleSquareClick(row, col){
     const nextSquares = squares.slice();
 
@@ -24,7 +24,7 @@ function Board(){
       return;
     }
 
-    if(nextSquares[row][col] ) {
+    if(nextSquares[row][col]) {
       alert("!! Already "+nextSquares[row][col]+" filled this square.")
       return;
     }

@@ -27,15 +27,3 @@ export default function App() {
   );
 }
 
-function ColorBox({color, label, handler}){
-  return (
-    <>
-    <botton 
-      className="color-box" 
-      onClick={()=> handler(color)} 
-      style = {{backgroundColor: color}}>
-      {label}
-    </botton>
-    </>
-  );
-}
