@@ -1,5 +1,4 @@
 import "./currency-conveter.css"
-import 'bootstrap/dist/css/bootstrap.css';
 import useCurrencyInfo from "./useCurrencyInfo"
 import { useState } from "react";
 
