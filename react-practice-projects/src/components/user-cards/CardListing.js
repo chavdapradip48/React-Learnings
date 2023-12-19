@@ -1,11 +1,8 @@
 import { Card } from './Card';
-import '../App.css'
+import './card.css'
 import React, { useState, useEffect } from "react";
 import toast from 'react-hot-toast';
 
-import ClipLoader from "react-spinners/ClipLoader";
-import HashLoader from "react-spinners/HashLoader";
-import SyncLoader from "react-spinners/SyncLoader";
 import BeatLoader from "react-spinners/BeatLoader";
 
 

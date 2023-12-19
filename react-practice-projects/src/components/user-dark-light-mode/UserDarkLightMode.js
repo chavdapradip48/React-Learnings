@@ -1,11 +1,28 @@
-import React from 'react'
+import React, { useState } from 'react'
 import cardImage from './user.jpg'
 import  './user-mode.css'
+import BootstrapSwitchButton from 'bootstrap-switch-button-react'
 
 export const UserDarkLightMode = () => {
+
+  const [mode, setMode] = useState(false);
+  const [theme, setTheme] = useState("white-mode");
+
+  function changeMode(){
+    setMode(!mode)
+    if(!mode) {
+      setTheme("dark-theme");
+    } else {
+      setTheme("white-theme");
+    }
+  }
+
   return (
     <section id="mode-section">
-      <div className="card">
+      <div id="mode-toggle">
+        <BootstrapSwitchButton checked={true} width={100} offlabel={"Light"} onlabel={"Dark"} onChange={changeMode}/>
+      </div>
+      <div className={"card "+theme}>
         <img className="card-img-top" src={cardImage} alt="Card image cap" />
         <div className="card-body">
           <h5 className="card-title">Jennifer Abraham</h5>
