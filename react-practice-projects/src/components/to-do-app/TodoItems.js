@@ -28,7 +28,7 @@ function TodoItems({ todo }) {
                 type="checkbox"
                 className="cursor-pointer"
                 checked={todo.completed}
-                onChange={markComplate(todo.id)}
+                onChange={() => markComplate(todo.id)}
             />
             <input
                 type="text"
