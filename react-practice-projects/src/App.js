@@ -9,6 +9,7 @@ import CurrencyConverter from './components/currency-converter/CurrencyConverter
 import { ToDoApp } from './components/to-do-app/ToDoApp';
 import { MiniContext } from './components/mini-context/MiniContext';
 import { UserDarkLightMode } from './components/user-dark-light-mode/UserDarkLightMode';
+import { TodoAppRedux } from './components/to-do-app-redux/TodoAppRedux';
 
 const App = () => {
 	return (
@@ -23,6 +24,7 @@ const App = () => {
 					<Route path="/mini-context" element={<MiniContext />} />
 					<Route path="/user-dark-light-mode" element={<UserDarkLightMode />} />
 					<Route path="/to-do-app" element={<ToDoApp />} />
+					<Route path="/to-do-app-redux" element={<TodoAppRedux />} />
 				</Routes>
 			</Suspense>
 		</>
