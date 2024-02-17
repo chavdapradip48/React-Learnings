@@ -45,5 +45,11 @@ export const SidebarData = [
     path: '/to-do-app-redux',
     icon: <IoIcons.IoIosPaper />,
     cName: 'nav-text'
+  },
+  {
+    title: 'Expense Tracker',
+    path: '/expense-tracker',
+    icon: <IoIcons.IoIosPaper />,
+    cName: 'nav-text'
   }
 ];

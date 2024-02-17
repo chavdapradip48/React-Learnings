@@ -10,6 +10,7 @@ import { ToDoApp } from './components/to-do-app/ToDoApp';
 import { MiniContext } from './components/mini-context/MiniContext';
 import { UserDarkLightMode } from './components/user-dark-light-mode/UserDarkLightMode';
 import { TodoAppRedux } from './components/to-do-app-redux/TodoAppRedux';
+import { ExpenseTracker } from './components/expense-tracker/ExpenseTracker';
 
 const App = () => {
 	return (
@@ -25,6 +26,7 @@ const App = () => {
 					<Route path="/user-dark-light-mode" element={<UserDarkLightMode />} />
 					<Route path="/to-do-app" element={<ToDoApp />} />
 					<Route path="/to-do-app-redux" element={<TodoAppRedux />} />
+					<Route path="/expense-tracker" element={<ExpenseTracker />} />
 				</Routes>
 			</Suspense>
 		</>
